@@ -1,0 +1,82 @@
+sudo apt update && sudo apt upgrade
+
+--------------------------++++-------------
+
+cd ~
+
+--------------------------++++-------------
+curl -sL https://deb.nodesource.com/setup_16.x -o /tmp/nodesource_setup.sh
+
+--------------------------++++-------------
+
+nano /tmp/nodesource_setup.sh
+
+--------------------------++++-------------
+
+sudo bash /tmp/nodesource_setup.sh
+
+--------------------------++++-------------
+
+sudo apt install nodejs
+
+
+--------------------------++++-------------
+
+node -v
+
+Tem que aparecer essa versão
+
+Output
+v16.20.0
+
+--------------------------++++-------------
+
+Vai Baixar o painel no GITHUB
+
+https://github.com/DTunnelMod/painel/tree/425e2c99b105e12421df26ec74c20c5421f19717
+
+E extrair usando o MTManger
+E separar o arquivo .env
+
+--------------------------++++-------------
+
+node -e "console.log(require('crypto').randomBytes(256).toString('base64'));"
+
+
+Vão colocar esse código 3vezes e pegar a criptografia que gerar... 
+Colocar no .env
+
+
+--------------------------++++-------------
+
+Depois vai fazer upload dos arquivos via SFTP no Terminus direto na pasta Root
+
+
+--------------------------++++-------------
+
+npm install
+
+
+--------------------------++++-------------
+
+npx prisma generate
+
+
+--------------------------++++-------------
+
+npx prisma migrate deploy
+
+
+--------------------------++++-------------
+
+npm run start
+
+
+--------------------------++++-------------
+
+Depois e só entrar no Seu IP com a porta :3000
+
+Exemplo:200.152.57.23:3000
+
+Obs ou porta que vcs colocaram na .env
+--------------------------++++-------------
